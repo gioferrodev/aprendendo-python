@@ -22,3 +22,10 @@
 
 dia = int(input('digite o seu dia de nascimento: '))
 mes = input('digite agora o seu mês de nascimento: ')
+
+if mes == 'janeiro' and dia in range(20, 32) or mes == 'fevereiro' and dia in range(1, 19):
+    print('Você é do signo de aquário.')
+elif mes == 'feveiro' and dia in range(19, 29) or mes == 'março' and dia in range(1, 21):
+    print('Você é signo de peixes.')
+else:
+    print('Data inválida')
